@@ -1,0 +1,508 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  background: white;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Lusitana", serif;
+  font-family: "Raleway", sans-serif;
+  max-width: 100%;
+  margin: 0 auto;
+  min-width: fit-content;
+}
+
+h3 {
+  font-size: 30pt;
+}
+
+
+
+/************* <!--Nav Header-- >  *************/
+.nav-logo {
+  width: 180px;
+  padding: 10px 50px;
+}
+
+.navbar {
+  display: flex;
+  position:fixed;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  width: 100%;
+  border-bottom: 2px solid white;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+/* <!--Hamburger Bars-- >  */
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+/************* <!--Nav Header End-- >  *************/
+
+
+
+/************* Hero *************/
+#hero {
+  height: 640px;
+  display: flex;
+  background-image: url("https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  max-width: 100vw;
+}
+
+.hero-container {
+  padding: 145px;
+}
+
+.hero-text-container {
+  color: #fff;
+  line-height: 2rem;
+
+}
+
+/* <!--Button-- >  */
+button {
+  margin: 20px 0;
+  width: 150px;
+  height: 40px;
+  background: #fff;
+  color: #333;
+  border-radius: 5px;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  transition: all 0.5s ease-out;
+}
+
+button:hover {
+  background-color: #333;
+  color: white;
+}
+/************* <!--Hero End-- >  *************/
+
+
+
+/************* About Me *************/
+#aboutme {
+  box-sizing: border-box;
+  background: #333;
+  color: white;
+  padding: 50px;
+  max-width: 100vw;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.about-text-container {
+  width: 600px;
+  padding-right: 40px;
+}
+
+.about-text-container > h3 {
+  margin-top: 0px;
+}
+
+.profilepic {
+  width: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.image-container {
+  display: flex;
+}
+/************* About Me End *************/
+
+
+
+/*Image */
+.img-round {
+  width: 100%;
+}
+
+
+/************* Skills *************/
+#skills {
+  display: flex;
+  max-width: 100vw;
+  justify-content: center;
+  padding-top: 50px;
+  overflow: hidden;
+
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 80px 200px;
+  gap: 40px;
+}
+
+.skills-container {
+  background: white;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills-logo {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.skills-text-container {
+  text-align: center;
+  color: #333;
+}
+/************* Skills End *************/
+
+
+
+/************* Projects *************/
+#projects {
+  background: #333;
+  color: white;
+  padding: 50px;
+  max-width: 100vw;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 65px;
+  margin: 80px 0px 0px;  
+}
+
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.projects-text-container {
+  color: #fff;
+  text-align: center;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+/************* Projects End*************/
+
+
+
+/************* <!--Testimonial-- >  *************/
+#testimonial {
+  background: #333;
+  color: white;
+  padding: 50px;
+  max-width: 100vw;
+}
+
+.testimonial-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-text-container > h3 {
+  margin-bottom: 0;
+}
+
+.testimonial-text-container {
+  color: #fff;
+  text-align: center;
+}
+
+#slider .slides {
+  display: block;
+  width: 700vw;
+  height: 100%;
+  margin: 0;
+  margin-left: 0;
+  padding: 0;
+}
+
+#slider .slide {
+  float: left;
+  list-style-type: none;
+  width: 100vw;
+  max-height: 100%;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  font-style: italic;
+  font-family: "Droid Serif";
+  color: #ffffff;
+  max-width: fit-content;
+}
+
+#testimonial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  padding-top: 50px;
+}
+
+.testimonial-mobile {
+  display:none;
+}
+/************* <!--Testimonial End-- >  *************/
+
+
+
+/************* Contact *************/
+.contact-container {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 50px;
+  line-height: 0.3;
+}
+
+.contact-text-container {
+  padding-left: 60px;
+}
+/************* <!--Contact End-- >  *************/
+
+
+
+/************* Footer *************/
+#footer {
+  background: #ffffff;
+  color: #333;
+  padding-top: 50px;
+  padding-bottom: 35px;
+  text-align: center;
+}
+
+/*Social Icons */
+.social-icon {
+  padding: 20px;
+  font-size: 30px;
+  color: #333;
+}
+
+.fa-github:hover {
+  color: #7f57bb;
+}
+
+.fa-codepen:hover {
+  color: lightgray;
+}
+.fa-instagram:hover {
+  color: #F77737;
+}
+
+.fa-linkedin:hover {
+  color: #4267B2;
+}
+
+/************* <!--Footer End-- >  *************/
+
+
+
+
+
+
+
+
+
+
+/************* MEDIA QUERIES PROJECT SECTION *************/
+
+@media (max-width: 900px){
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+/************* MEDIA QUERIES MOBILE *************/
+@media (max-width: 480px) {
+  .nav-link {
+    display: none;
+  }
+
+  .hero-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+  }
+
+  .hero-text-container {
+    line-height: 1.0;
+  }
+
+  #aboutme {
+    box-sizing: border-box;
+    height: 700px;
+  }
+
+  .about-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .about-text-container {
+    padding: 10px;
+    padding-bottom: 30px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .skills-container{
+    display: flex;
+  }
+
+ .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+
+  #projects {
+    height: 1100px;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  #testimonial {
+    padding-top: 250px;
+  }
+
+  .testimonial-slide {
+    display: none;
+  }
+
+  .testimonial-mobile {
+display: grid;
+grid-template-columns: 1fr;
+  }
+
+  .contact-container {
+    padding: 20px;
+    display: block;
+    line-height: 0.3;
+}
